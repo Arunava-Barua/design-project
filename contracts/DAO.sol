@@ -34,9 +34,9 @@ contract DAO {
         owner = _owner;
         members.push(_owner);
         memberLimit ++;
-        daoContract = IdaoContract(0x2953399124F0cBB46d2CbACD8A89cF0599974963);
+        daoContract = IdaoContract('Contract address of the NFT collection');
         //-------------------------0x2953399124F0cBB46d2CbACD8A89cF0599974963
-        validTokens = [51540308150861228635517323782287372650707639654396802749657747226746305904641];
+        validTokens = ['Enter valid tokens here'];
     }
 
     // Proposals structure
