@@ -25,11 +25,11 @@ contract DAO {
 
     modifier guard() {
         require(msg.sender == owner, "You are not the owner");
-        require(memberLimit < (2**32), "Member Limit Exceeded");
+        require(memberLimit < (2**16), "Member Limit Exceeded");
         _;
     }
 
-    constructor(uint _id, address _owner) {
+    constructor(uint _id, address _owner) payable {
         id = _id;
         owner = _owner;
         members.push(_owner);
